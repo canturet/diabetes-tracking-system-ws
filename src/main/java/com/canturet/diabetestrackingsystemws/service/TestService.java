@@ -10,7 +10,7 @@ import java.util.List;
 public interface TestService {
     Test createTest(TestCreateRequest testCreateRequest) throws IOException;
 
-    List<Test> getTestsByUserId(Long id);
+    List<Test> getTestsByUsername(String username);
 
     ResponseEntity<?> deleteTest(Long id);
 }

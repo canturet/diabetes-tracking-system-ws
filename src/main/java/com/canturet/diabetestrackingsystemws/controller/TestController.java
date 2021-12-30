@@ -16,9 +16,9 @@ public class TestController {
     @Autowired
     TestService testService;
 
-    @GetMapping("/getTestsByUserId/{id}")
-    public ResponseEntity<?> getTestsByUserId(@PathVariable("id") Long id) {
-        return ResponseEntity.ok(testService.getTestsByUserId(id));
+    @GetMapping("/getTestsByUserId/{username}")
+    public ResponseEntity<?> getTestsByUsername(@PathVariable("username") String username) {
+        return ResponseEntity.ok(testService.getTestsByUsername(username));
     }
 
     @PostMapping("/createTest")

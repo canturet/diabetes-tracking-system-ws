@@ -20,7 +20,7 @@ public class Test {
     private Long id;
 
     @NotNull(message = "'userId' alanı zorunludur.")
-    private Long userId;
+    private String username;
 
     @NotBlank(message = "'diabetesType' alanı zorunludur.")
     @Size(max = 20, message = "'diabetesType' alanı maksimum 20 karakterden oluşabilir.")

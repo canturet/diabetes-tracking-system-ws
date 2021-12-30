@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 
 @Data
 public class TestCreateRequest {
-    @NotNull(message = "'userId' alanı zorunludur.")
-    private Long userId;
+    @NotNull(message = "'username' alanı zorunludur.")
+    private String username;
 
     @NotBlank(message = "'diabetesType' alanı zorunludur.")
     @Size(max = 20, message = "'diabetesType' alanı maksimum 20 karakterden oluşabilir.")
